@@ -102,7 +102,7 @@ A clear and measurable performance improvement is expected once the short-term a
 
 ---
 
-# 📈 Short-Term Strategy Flow (Mermaid Diagram)
+# 📈 Short-Term Strategy Flow
 
 ```mermaid
 flowchart TD
@@ -118,42 +118,7 @@ flowchart TD
 
 # 🌍 Long-Term Plan (1-6 Months)
 
-## 🚀 Architecture Evolution
-
-- Transition to a **Headless Frontend**.
-- WordPress remains backend for SEO and content.
-- Build **React/Next.js** or **Astro.js** based frontend.
-- Implement **direct DB Query Caching** for performance.
-- Set up aggressive CDN caching and static generation.
-
-## 📊 Headless System Overview
-
-```mermaid
-flowchart TD
-    A["WordPress CMS (MySQL Backend)"] -->|GraphQL / Direct SQL Access| B["Headless Frontend Server (Next.js)"]
-    B --> C[Static Generation or ISR]
-    C --> D[Edge CDN Cache]
-    D --> E[User Mobile/Desktop Access]
-```
-
----
-
-## 🛋 Key Steps for Headless Future
-
-### 1. Frontend Development
-- Build UI using **Next.js** or **Astro.js**.
-- Fetch content from WordPress API or custom DB queries.
-
-### 2. Backend API Layer (Optional for Optimization)
-- Set up a lightweight API to cache/retrieve specific content quickly.
-
-### 3. Database Query Caching
-- Direct SQL access for critical paths.
-- Use Redis or Memcached to cache expensive queries.
-
-### 4. Hosting and CDN
-- Deploy frontend on Vercel, Netlify, or custom server.
-- Use Cloudflare or AWS CloudFront for CDN.
+Refer to [AppMail.co Headless Architecture Plan](/headless/README.md) for detailed steps and diagrams.
 
 ---
 
